@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtualenvs
+venv/
+env/
+.env
+.venv
+
+# IDEs
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Logs and outputs
+logs/
+ocr_output/
+style_gallery/
+styles/
+
+# Model checkpoints and large artifacts
+checkpoints/
+trocr_model_large/
+*.meta
+*.index
+*.data-*
+*.ckpt
+*.h5
+*.pb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+Pipfile.lock
+
+mlruns/
+*.svg
