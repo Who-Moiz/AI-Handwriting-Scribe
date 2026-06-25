@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-scribe-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-scribe
+  template:
+    metadata:
+      labels:
+        app: ai-scribe
+    spec:
+      containers:
+      - name: ai-scribe-container
+        image: ai-scribe-app:v1
+        imagePullPolicy: Never  # <--- ADD THIS LINE
+        ports:
+        - containerPort: 8000
